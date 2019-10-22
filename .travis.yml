@@ -7,4 +7,4 @@ before_install:
   - docker pull pickandwhammy/cpp17-sfml:0.2
 
 install:
-  - docker run -v $PWD:/workspace -it pickandwhammy/cpp17-sfml:0.2 .ci/start.sh
+  - docker run -v $PWD:/workspace -it pickandwhammy/cpp17-sfml:0.2 chmod a+x .ci/*.sh && .ci/start.sh
